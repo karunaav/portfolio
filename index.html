@@ -11,42 +11,23 @@
 <title>Karuna Venkatesh</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,300..900&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=Space+Grotesk:wght@300..700&family=Space+Mono:wght@400;700&display=swap">
 <style>
 :root{
+  /* colourful palette. --amber = the element's main accent, --cyan = its second accent (both re-set per card/section below) */
   color-scheme:dark;
-  --bg:#0C111E; --bg2:#111829; --surface:#151D31; --surface2:#1B2540;
-  --line:#253050; --line2:#33406A;
-  --text:#EAEEF6; --muted:#8F9BB5; --faint:#5E6A86;
-  --amber:#FFB24C; --amber-soft:rgba(255,178,76,.14); --amber-ink:#1B1204;
-  --cyan:#63D0E4; --cyan-soft:rgba(99,208,228,.12);
-  --grid:rgba(143,155,181,.09);
-  --shadow:0 30px 60px -30px rgba(0,0,0,.7);
-  --display:"Anybody","Arial Narrow",system-ui,sans-serif;
-  --body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
-  --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
-}
-@media (prefers-color-scheme:light){
-  :root:not([data-theme="dark"]){
-    color-scheme:light;
-    --bg:#F1F3F8; --bg2:#E7EBF3; --surface:#FFFFFF; --surface2:#F6F8FC;
-    --line:#D3DAE7; --line2:#BAC4D8;
-    --text:#111728; --muted:#525D78; --faint:#8791A8;
-    --amber:#C2610C; --amber-soft:rgba(194,97,12,.10); --amber-ink:#FFFFFF;
-    --cyan:#0F7C93; --cyan-soft:rgba(15,124,147,.09);
-    --grid:rgba(82,93,120,.08);
-    --shadow:0 30px 60px -34px rgba(20,30,60,.35);
-  }
-}
-:root[data-theme="light"]{
-  color-scheme:light;
-  --bg:#F1F3F8; --bg2:#E7EBF3; --surface:#FFFFFF; --surface2:#F6F8FC;
-  --line:#D3DAE7; --line2:#BAC4D8;
-  --text:#111728; --muted:#525D78; --faint:#8791A8;
-  --amber:#C2610C; --amber-soft:rgba(194,97,12,.10); --amber-ink:#FFFFFF;
-  --cyan:#0F7C93; --cyan-soft:rgba(15,124,147,.09);
-  --grid:rgba(82,93,120,.08);
-  --shadow:0 30px 60px -34px rgba(20,30,60,.35);
+  --c1:#F2A7C6; --c2:#F3BE95; --c3:#EBD597; --c4:#9AD8B6; --c5:#9CCDEB; --c6:#BCACEE;
+  --rainbow:linear-gradient(90deg,var(--c1),var(--c2),var(--c3),var(--c4),var(--c5),var(--c6));
+  --bg:#101116; --bg2:#15171D; --surface:#181A21; --surface2:#1E2129;
+  --line:#2A2D37; --line2:#393D4A;
+  --text:#E9EAF0; --muted:#A3A7B5; --faint:#6F7482;
+  --amber:var(--c5); --amber-soft:rgba(156,205,235,.12); --amber-ink:#13161C;
+  --cyan:var(--c6); --cyan-soft:rgba(188,172,238,.10);
+  --grid:rgba(170,163,191,.06);
+  --shadow:0 30px 60px -30px rgba(0,0,0,.85);
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Space Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"Space Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
 }
 
 *{box-sizing:border-box}
@@ -100,7 +81,7 @@ nav.top .wrap{display:flex; align-items:center; justify-content:space-between; g
 }
 .name .line{display:block; overflow:hidden; padding-bottom:.06em; white-space:nowrap}
 .name .ch{
-  display:inline-block; font-variation-settings:"wdth" 100,"wght" 800;
+  display:inline-block; font-variation-settings:"SOFT" 100,"WONK" 1,"wght" 800;
   animation:rise .95s cubic-bezier(.2,.8,.2,1) both, breathe 7s ease-in-out infinite;
   animation-delay:calc(var(--i)*55ms), calc(1s + var(--i)*140ms);
   transition:color .25s;
@@ -108,7 +89,7 @@ nav.top .wrap{display:flex; align-items:center; justify-content:space-between; g
 .name .line.two .ch{color:transparent; -webkit-text-stroke:1.5px var(--text)}
 .name .ch:hover{color:var(--amber); -webkit-text-stroke-color:var(--amber)}
 @keyframes rise{from{transform:translateY(.55em) rotate(4deg)}to{transform:none}}
-@keyframes breathe{0%,100%{font-variation-settings:"wdth" 100,"wght" 800}50%{font-variation-settings:"wdth" 122,"wght" 620}}
+@keyframes breathe{0%,100%{font-variation-settings:"SOFT" 100,"WONK" 1,"wght" 800}50%{font-variation-settings:"SOFT" 0,"WONK" 1,"wght" 560}}
 
 .hero-grid{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.15fr); gap:40px; margin-top:44px; align-items:start}
 @media (max-width:900px){ .hero-grid{grid-template-columns:1fr; gap:32px} }
@@ -152,7 +133,7 @@ nav.top .wrap{display:flex; align-items:center; justify-content:space-between; g
 section.block{padding-block:96px 0}
 .sec-head{display:flex; justify-content:space-between; align-items:end; gap:20px; flex-wrap:wrap; margin-bottom:36px}
 .sec-head h2{
-  font:800 clamp(2.1rem,5.4vw,4rem)/.95 var(--display); font-variation-settings:"wdth" 112;
+  font:800 clamp(2.1rem,5.4vw,4rem)/.95 var(--display); font-variation-settings:"SOFT" 100,"WONK" 1;
   margin:10px 0 0; letter-spacing:-.015em; text-wrap:balance;
 }
 .sec-head h2 .trace{display:block; height:3px; width:120px; margin-top:16px; background:linear-gradient(90deg,var(--amber),var(--cyan)); border-radius:2px; transform-origin:0 50%}
@@ -178,7 +159,7 @@ section.block{padding-block:96px 0}
 .card-body{position:relative; padding:22px 22px 20px; display:flex; flex-direction:column; gap:12px; height:100%}
 .meta{display:flex; justify-content:space-between; gap:10px; font:500 11.5px/1 var(--mono); color:var(--faint); letter-spacing:.06em; text-transform:uppercase}
 .meta .tag{color:var(--cyan)}
-.card h3{font:750 1.45rem/1.1 var(--display); font-variation-settings:"wdth" 108; margin:0; letter-spacing:-.01em}
+.card h3{font:750 1.45rem/1.1 var(--display); font-variation-settings:"SOFT" 100,"WONK" 1; margin:0; letter-spacing:-.01em}
 .card p{margin:0; color:var(--muted); font-size:15px; line-height:1.55}
 .stack{font:400 12px/1.5 var(--mono); color:var(--faint); margin-top:auto}
 .links{display:flex; gap:8px; flex-wrap:wrap}
@@ -193,6 +174,8 @@ section.block{padding-block:96px 0}
 .links a:hover .arrow{transform:translate(2px,-2px)}
 
 .featured{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px}
+.featured .card{display:flex; flex-direction:column}
+.featured .card-body{height:auto; flex:1}
 @media (max-width:980px){ .featured{grid-template-columns:1fr} .featured .card{display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,1fr)} }
 @media (max-width:640px){ .featured .card{display:block} }
 .diagram{background:var(--bg2); border-bottom:1px solid var(--line); aspect-ratio:2/1; max-width:100%; display:grid; place-items:center; position:relative}
@@ -217,6 +200,7 @@ section.block{padding-block:96px 0}
 @media (max-width:640px){ .grid-more{grid-template-columns:1fr} }
 .grid-more .card-body{min-height:260px}
 @media (max-width:980px) and (min-width:641px){ .grid-more .card:last-child:nth-child(odd){grid-column:1/-1} }
+@media (min-width:981px){ .grid-more .card:last-child:nth-child(3n+1){grid-column:1/-1} .grid-more .card:last-child:nth-child(3n+1) .card-body{min-height:0} }
 .pill{font:600 12px/1 var(--mono); letter-spacing:.04em; padding:9px 13px; border-radius:999px; border:1px dashed var(--line2); color:var(--muted)}
 .pill.win{border:1px solid var(--amber); color:var(--amber); background:var(--amber-soft); position:relative; overflow:hidden}
 .pill.win::after{content:""; position:absolute; inset:0; background:linear-gradient(100deg,transparent 30%,rgba(255,255,255,.35) 50%,transparent 70%); transform:translateX(-120%); animation:shine 3.2s ease-in-out infinite}
@@ -230,7 +214,7 @@ section.block{padding-block:96px 0}
 .timeline li.now::before{border-color:var(--amber); background:var(--amber); animation:led 2.4s ease-out infinite}
 .when{font:500 12.5px/1.4 var(--mono); color:var(--muted); letter-spacing:.04em; padding-top:4px; font-variant-numeric:tabular-nums}
 .timeline li.now .when{color:var(--amber)}
-.what h3{font:750 1.3rem/1.25 var(--display); font-variation-settings:"wdth" 104; margin:0}
+.what h3{font:750 1.3rem/1.25 var(--display); font-variation-settings:"SOFT" 100,"WONK" 1; margin:0}
 .what h3 span{font-weight:500; color:var(--muted)}
 .what p{margin:8px 0 0; color:var(--muted); max-width:62ch}
 .what .spec{margin-top:8px}
@@ -261,7 +245,7 @@ section.block{padding-block:96px 0}
 @media (max-width:760px){ .edu{grid-template-columns:1fr} }
 .edu > div{padding:24px 24px 26px 0; border-bottom:1px solid var(--line); display:flex; flex-direction:column; gap:6px}
 @media (min-width:761px){ .edu > div + div{padding-left:24px; border-left:1px solid var(--line)} }
-.edu h3{font:750 1.25rem/1.2 var(--display); font-variation-settings:"wdth" 104; margin:0}
+.edu h3{font:750 1.25rem/1.2 var(--display); font-variation-settings:"SOFT" 100,"WONK" 1; margin:0}
 .edu p{margin:0; color:var(--muted)}
 
 /* signals & silicon */
@@ -269,7 +253,7 @@ section.block{padding-block:96px 0}
 @media (max-width:860px){ .silicon{grid-template-columns:1fr} }
 .silicon article{padding:26px 24px 28px 0; border-bottom:1px solid var(--line); display:flex; flex-direction:column; gap:10px}
 @media (min-width:861px){ .silicon article + article{padding-left:24px; border-left:1px solid var(--line)} }
-.silicon h3{font:750 1.2rem/1.2 var(--display); font-variation-settings:"wdth" 105; margin:0}
+.silicon h3{font:750 1.2rem/1.2 var(--display); font-variation-settings:"SOFT" 100,"WONK" 1; margin:0}
 .silicon p{margin:0; color:var(--muted); font-size:15px}
 .spec{font:400 12px/1.6 var(--mono); color:var(--cyan)}
 .wave{height:36px; width:100%; max-width:100%}
@@ -322,7 +306,7 @@ section.block{padding-block:96px 0}
 .panel.r{transform-origin:left center; background:#1C1C22}
 .card:hover .panel.l{transform:rotateY(28deg)}
 .card:hover .panel.r{transform:rotateY(-28deg)}
-.panel .hd{font:800 11px/1 var(--display); font-variation-settings:"wdth" 70; color:#fff; letter-spacing:.02em}
+.panel .hd{font:800 11px/1 var(--display); font-variation-settings:"SOFT" 100,"WONK" 1; color:#fff; letter-spacing:.02em}
 .panel .ln{height:4px; background:rgba(255,255,255,.28); border-radius:2px}
 .panel .ln.s{width:60%}
 .bars{display:flex; align-items:end; gap:3px; height:34%; margin-top:auto}
@@ -334,8 +318,8 @@ section.block{padding-block:96px 0}
 /* contact */
 .contact{padding-block:110px 60px}
 .contact h2{font:800 clamp(2.6rem,9vw,7rem)/.9 var(--display); letter-spacing:-.02em; margin:14px 0 0; text-wrap:balance}
-.contact h2 span{display:inline-block; font-variation-settings:"wdth" 60,"wght" 800; transition:font-variation-settings .6s cubic-bezier(.2,.8,.2,1), color .3s}
-.contact h2:hover span{font-variation-settings:"wdth" 130,"wght" 800}
+.contact h2 span{display:inline-block; font-variation-settings:"SOFT" 100,"WONK" 1,"wght" 800; transition:font-variation-settings .6s cubic-bezier(.2,.8,.2,1), color .3s}
+.contact h2:hover span{font-variation-settings:"SOFT" 0,"WONK" 1,"wght" 420}
 .contact h2 span.acc{color:var(--amber)}
 .contact-row{display:flex; flex-wrap:wrap; gap:12px; margin-top:34px; align-items:center}
 .email{font:500 clamp(1rem,2.4vw,1.35rem)/1 var(--mono); user-select:all; padding:14px 18px; border:1px dashed var(--line2); border-radius:12px; background:var(--surface)}
@@ -350,6 +334,125 @@ footer{border-top:1px solid var(--line); padding-block:22px 34px; font:400 12px/
 }
 @keyframes revealIn{from{opacity:.15; transform:translateY(38px) scale(.98)}to{opacity:1; transform:none}}
 @keyframes drawTrace{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+
+/* ===== colour layer: soft pastels, used sparingly ===== */
+body::after{
+  content:""; position:fixed; inset:0; pointer-events:none; z-index:0;
+  background:
+    radial-gradient(40% 32% at 12% 6%, rgba(242,167,198,.06), transparent 70%),
+    radial-gradient(36% 30% at 88% 10%, rgba(156,205,235,.06), transparent 70%),
+    radial-gradient(40% 34% at 70% 92%, rgba(188,172,238,.05), transparent 70%);
+}
+.progress i,.sec-head h2 .trace{background:linear-gradient(90deg,var(--c5),var(--c6),var(--c1))}
+.mono-mark .led{background:var(--c4)}
+.navlinks a:hover{color:var(--text)}
+.eyebrow b{color:var(--c4)}
+.lede em{color:var(--c5)}
+
+/* hero name: calm white; each letter picks up a pastel only on hover */
+.name .ch{--lc:var(--c1)}
+.name .ch:nth-child(6n+1){--lc:var(--c1)}
+.name .ch:nth-child(6n+2){--lc:var(--c2)}
+.name .ch:nth-child(6n+3){--lc:var(--c3)}
+.name .ch:nth-child(6n+4){--lc:var(--c4)}
+.name .ch:nth-child(6n+5){--lc:var(--c5)}
+.name .ch:nth-child(6n+6){--lc:var(--c6)}
+.name .line.one .ch{color:var(--text)}
+.name .line.two .ch{-webkit-text-stroke-color:color-mix(in srgb,var(--text) 70%,transparent)}
+.name .ch:hover{color:var(--lc); -webkit-text-stroke-color:var(--lc)}
+
+/* buttons */
+.btn.primary{background:var(--c5); border-color:var(--c5); color:#13161C}
+.btn:not(.primary):hover{border-color:var(--c5)}
+
+/* scope */
+.scope-head .ch1{color:var(--c5)}
+.scope-foot .band{color:var(--c6)}
+
+/* marquee: neutral words, pastel dots */
+.marquee span{color:var(--muted)}
+.marquee span::after{background:var(--mc,var(--c5)); opacity:.8}
+.marquee span:nth-child(6n+1){--mc:var(--c1)}
+.marquee span:nth-child(6n+2){--mc:var(--c2)}
+.marquee span:nth-child(6n+3){--mc:var(--c3)}
+.marquee span:nth-child(6n+4){--mc:var(--c4)}
+.marquee span:nth-child(6n+5){--mc:var(--c5)}
+.marquee span:nth-child(6n+6){--mc:var(--c6)}
+
+/* sections each lean on one soft colour */
+#projects{--amber:var(--c5); --amber-soft:rgba(156,205,235,.12)}
+#experience{--amber:var(--c6); --amber-soft:rgba(188,172,238,.12); --cyan:var(--c5)}
+#skills{--amber:var(--c4); --amber-soft:rgba(154,216,182,.12)}
+#signals{--amber:var(--c2); --amber-soft:rgba(243,190,149,.12)}
+#uiux{--amber:var(--c1); --amber-soft:rgba(242,167,198,.12)}
+#contact{--amber:var(--c5); --amber-soft:rgba(156,205,235,.12)}
+.subhead b{color:var(--amber)}
+
+/* cards: one quiet accent each (thin top line, tag, diagram tint) */
+.featured .card:nth-child(6n+1),
+.grid-more .card:nth-child(6n+1),
+.uiux .card:nth-child(6n+1),
+.silicon article:nth-child(6n+1),
+.skill-group:nth-child(6n+1),
+.timeline li:nth-child(6n+1),
+.edu > div:nth-child(6n+1){--amber:var(--c1); --amber-soft:color-mix(in srgb,var(--c1) 12%,transparent); --cyan:var(--c5); --cyan-soft:color-mix(in srgb,var(--c5) 10%,transparent)}
+.featured .card:nth-child(6n+2),
+.grid-more .card:nth-child(6n+2),
+.uiux .card:nth-child(6n+2),
+.silicon article:nth-child(6n+2),
+.skill-group:nth-child(6n+2),
+.timeline li:nth-child(6n+2),
+.edu > div:nth-child(6n+2){--amber:var(--c2); --amber-soft:color-mix(in srgb,var(--c2) 12%,transparent); --cyan:var(--c6); --cyan-soft:color-mix(in srgb,var(--c6) 10%,transparent)}
+.featured .card:nth-child(6n+3),
+.grid-more .card:nth-child(6n+3),
+.uiux .card:nth-child(6n+3),
+.silicon article:nth-child(6n+3),
+.skill-group:nth-child(6n+3),
+.timeline li:nth-child(6n+3),
+.edu > div:nth-child(6n+3){--amber:var(--c3); --amber-soft:color-mix(in srgb,var(--c3) 12%,transparent); --cyan:var(--c1); --cyan-soft:color-mix(in srgb,var(--c1) 10%,transparent)}
+.featured .card:nth-child(6n+4),
+.grid-more .card:nth-child(6n+4),
+.uiux .card:nth-child(6n+4),
+.silicon article:nth-child(6n+4),
+.skill-group:nth-child(6n+4),
+.timeline li:nth-child(6n+4),
+.edu > div:nth-child(6n+4){--amber:var(--c4); --amber-soft:color-mix(in srgb,var(--c4) 12%,transparent); --cyan:var(--c2); --cyan-soft:color-mix(in srgb,var(--c2) 10%,transparent)}
+.featured .card:nth-child(6n+5),
+.grid-more .card:nth-child(6n+5),
+.uiux .card:nth-child(6n+5),
+.silicon article:nth-child(6n+5),
+.skill-group:nth-child(6n+5),
+.timeline li:nth-child(6n+5),
+.edu > div:nth-child(6n+5){--amber:var(--c5); --amber-soft:color-mix(in srgb,var(--c5) 12%,transparent); --cyan:var(--c3); --cyan-soft:color-mix(in srgb,var(--c3) 10%,transparent)}
+.featured .card:nth-child(6n+6),
+.grid-more .card:nth-child(6n+6),
+.uiux .card:nth-child(6n+6),
+.silicon article:nth-child(6n+6),
+.skill-group:nth-child(6n+6),
+.timeline li:nth-child(6n+6),
+.edu > div:nth-child(6n+6){--amber:var(--c6); --amber-soft:color-mix(in srgb,var(--c6) 12%,transparent); --cyan:var(--c4); --cyan-soft:color-mix(in srgb,var(--c4) 10%,transparent)}
+.subhead ~ .subhead + .grid-more .card:nth-child(6n+1){--amber:var(--c4); --amber-soft:color-mix(in srgb,var(--c4) 12%,transparent); --cyan:var(--c2); --cyan-soft:color-mix(in srgb,var(--c2) 10%,transparent)}
+.subhead ~ .subhead + .grid-more .card:nth-child(6n+2){--amber:var(--c5); --amber-soft:color-mix(in srgb,var(--c5) 12%,transparent); --cyan:var(--c3); --cyan-soft:color-mix(in srgb,var(--c3) 10%,transparent)}
+.subhead ~ .subhead + .grid-more .card:nth-child(6n+3){--amber:var(--c6); --amber-soft:color-mix(in srgb,var(--c6) 12%,transparent); --cyan:var(--c4); --cyan-soft:color-mix(in srgb,var(--c4) 10%,transparent)}
+.subhead ~ .subhead + .grid-more .card:nth-child(6n+4){--amber:var(--c1); --amber-soft:color-mix(in srgb,var(--c1) 12%,transparent); --cyan:var(--c5); --cyan-soft:color-mix(in srgb,var(--c5) 10%,transparent)}
+.subhead ~ .subhead + .grid-more .card:nth-child(6n+5){--amber:var(--c2); --amber-soft:color-mix(in srgb,var(--c2) 12%,transparent); --cyan:var(--c6); --cyan-soft:color-mix(in srgb,var(--c6) 10%,transparent)}
+.subhead ~ .subhead + .grid-more .card:nth-child(6n+6){--amber:var(--c3); --amber-soft:color-mix(in srgb,var(--c3) 12%,transparent); --cyan:var(--c1); --cyan-soft:color-mix(in srgb,var(--c1) 10%,transparent)}
+.card::after{content:""; position:absolute; left:0; right:0; top:0; height:2px; background:var(--amber); opacity:.7; pointer-events:none}
+.card:hover{border-color:color-mix(in srgb,var(--amber) 55%,var(--line2))}
+.diagram,.stage{background:linear-gradient(160deg,color-mix(in srgb,var(--amber) 5%,var(--bg2)),var(--bg2))}
+.links a:hover{border-color:var(--amber); color:var(--amber); background:transparent}
+
+/* skills: neutral chips, coloured group titles */
+.chips span:hover{border-color:var(--amber); color:var(--amber)}
+
+/* timeline */
+.timeline::before{background:linear-gradient(var(--c6),var(--c5) 50%,var(--line))}
+.timeline li::before{border-color:color-mix(in srgb,var(--amber) 70%,var(--line2))}
+.timeline li.now::before{background:var(--amber); border-color:var(--amber)}
+.timeline li.now .when{color:var(--amber)}
+
+/* contact */
+.contact h2 span.acc{color:var(--c5)}
 
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.001ms!important; animation-iteration-count:1!important; transition-duration:.001ms!important; scroll-behavior:auto!important}
@@ -441,42 +544,41 @@ footer{border-top:1px solid var(--line); padding-block:22px 34px; font:400 12px/
           <p>16 years of NYC rodent inspections (2.72M records) run through a PySpark ETL into ZIP × month features with lag, rolling and seasonal windows. A Random Forest trained on 2009–2022 and tested on 2023–2025 reaches 0.87 AUC, shown in an interactive Leaflet dashboard.</p>
           <div class="stack">PySpark · MLlib (RF, GBT) · Parquet · Leaflet · Chart.js</div>
           <div class="links">
-            <a href="https://github.com/akashchauhanweb/nycOpenDataAnalysisOnRodentInfestation" target="_blank" rel="noopener">Code (team repo) <span class="arrow">↗</span></a>
+            <a href="https://github.com/karunaav/nyc-bigdata-rodent-infestation" target="_blank" rel="noopener">Code <span class="arrow">↗</span></a>
           </div>
         </div>
       </article>
 
-      <!-- Stock forecasting -->
+      <!-- VQA -->
       <article class="card tilt reveal">
         <div class="diagram">
-          <svg viewBox="0 0 320 160" role="img" aria-label="Price history and FinBERT news sentiment feed a transformer that predicts next-day returns">
-            <path class="d-path" d="M20 22 V104 H150"/>
-            <path class="d-flow" d="M24 84 L40 76 L56 80 L72 62 L88 67 L104 50 L120 56 L136 38 L148 42"/>
-            <rect x="26" y="106" width="9" height="12" rx="1.5" class="d-cool d-pulse"/>
-            <rect x="41" y="112" width="9" height="6" rx="1.5" class="d-cool d-pulse" style="animation-delay:.3s"/>
-            <rect x="56" y="118" width="9" height="8" rx="1.5" class="d-hot d-pulse" style="animation-delay:.6s"/>
-            <rect x="71" y="104" width="9" height="14" rx="1.5" class="d-cool d-pulse" style="animation-delay:.9s"/>
-            <rect x="86" y="118" width="9" height="5" rx="1.5" class="d-hot d-pulse" style="animation-delay:1.2s"/>
-            <rect x="101" y="108" width="9" height="10" rx="1.5" class="d-cool d-pulse" style="animation-delay:1.5s"/>
-            <rect x="116" y="102" width="9" height="16" rx="1.5" class="d-cool d-pulse" style="animation-delay:1.8s"/>
-            <rect x="131" y="118" width="9" height="6" rx="1.5" class="d-hot d-pulse" style="animation-delay:2.1s"/>
-            <text x="85" y="146" text-anchor="middle" class="d-dim">price + FinBERT sentiment</text>
-            <path class="d-flow" d="M156 70 H188"/>
-            <rect x="192" y="50" width="112" height="42" rx="10" class="d-hot"/>
-            <text x="248" y="68" text-anchor="middle" class="d-amb">transformer</text>
-            <text x="248" y="83" text-anchor="middle" class="d-dim">next-day return</text>
-            <text x="248" y="120" text-anchor="middle" class="d-text">SHAP · backtest</text>
-            <text x="248" y="136" text-anchor="middle" class="d-dim">CAGR · Sharpe · MDD</text>
+          <svg viewBox="0 0 320 160" role="img" aria-label="An image and a multiple-choice question go into SmolVLM with LoRA adapters, which picks one answer">
+            <rect x="18" y="28" width="74" height="56" rx="6" class="d-node"/>
+            <path d="M24 78 L44 54 L58 68 L68 60 L86 78 Z" class="d-cool"/>
+            <circle cx="74" cy="42" r="6" class="d-hot"/>
+            <rect x="18" y="92" width="74" height="16" rx="8" class="d-node"/>
+            <text x="55" y="103.5" text-anchor="middle" class="d-dim">question?</text>
+            <text x="55" y="136" text-anchor="middle" class="d-dim">image + question</text>
+            <path class="d-flow c" d="M98 66 H130"/>
+            <rect x="134" y="44" width="90" height="44" rx="10" class="d-hot"/>
+            <text x="179" y="63" text-anchor="middle" class="d-amb">SmolVLM</text>
+            <text x="179" y="78" text-anchor="middle" class="d-dim">LoRA · r=16</text>
+            <text x="179" y="136" text-anchor="middle" class="d-dim">≤ 5M trainable</text>
+            <path class="d-flow" d="M224 66 H248"/>
+            <rect x="252" y="22" width="52" height="18" rx="9" class="d-node"/><text x="278" y="34.5" text-anchor="middle" class="d-dim">A</text>
+            <g class="d-pulse"><rect x="252" y="46" width="52" height="18" rx="9" class="d-hot"/><text x="278" y="58.5" text-anchor="middle" class="d-amb">B ✓</text></g>
+            <rect x="252" y="70" width="52" height="18" rx="9" class="d-node"/><text x="278" y="82.5" text-anchor="middle" class="d-dim">C</text>
+            <rect x="252" y="94" width="52" height="18" rx="9" class="d-node"/><text x="278" y="106.5" text-anchor="middle" class="d-dim">D</text>
+            <text x="278" y="136" text-anchor="middle" class="d-text">0.831</text>
           </svg>
         </div>
         <div class="card-body">
-          <div class="meta"><span class="tag">ML · Finance</span><span>2025</span></div>
-          <h3>Sentiment-Aware Stock Forecasting</h3>
-          <p>A transformer predicts next-day returns from price history and FinBERT news sentiment. SHAP explains each call, and a backtest reports CAGR, Sharpe and max drawdown.</p>
-          <div class="stack">FinBERT · Transformer · FastAPI · Dash/Plotly · SHAP · Docker</div>
+          <div class="meta"><span class="tag">Vision-language · Kaggle</span><span>2026</span></div>
+          <h3>Pixels to Predictions (VQA)</h3>
+          <p>Fine-tuned SmolVLM-500M with rank-16 LoRA on the attention projections, under a 5M-parameter cap. Letter-shuffle augmentation fought positional bias; test-time augmentation lifted the score to 0.831.</p>
+          <div class="stack">SmolVLM · LoRA · PEFT · TTA · Colab under 1 hour</div>
           <div class="links">
-            <a class="live" href="https://sentiment-forecast-v3.onrender.com/dashboard/" target="_blank" rel="noopener">Live demo <span class="arrow">↗</span></a>
-            <a href="https://github.com/karunaav/FinBERT-sentiment-analysis" target="_blank" rel="noopener">Code <span class="arrow">↗</span></a>
+            <a href="https://github.com/karunaav/DL" target="_blank" rel="noopener">Notebooks <span class="arrow">↗</span></a>
           </div>
         </div>
       </article>
@@ -508,14 +610,6 @@ footer{border-top:1px solid var(--line); padding-block:22px 34px; font:400 12px/
     </div>
 
     <div class="grid-more">
-      <article class="card tilt reveal"><div class="card-body">
-        <div class="meta"><span class="tag">Vision-language · Kaggle</span><span>2026</span></div>
-        <h3>Pixels to Predictions (VQA)</h3>
-        <p>Fine-tuned SmolVLM-500M with rank-16 LoRA on the attention projections, under a 5M-parameter cap. Letter-shuffle augmentation fought positional bias; test-time augmentation lifted the score to 0.831.</p>
-        <div class="stack">SmolVLM · LoRA · PEFT · TTA · Colab under 1 hour</div>
-        <div class="links"><a href="https://github.com/karunaav/DL" target="_blank" rel="noopener">Notebooks <span class="arrow">↗</span></a></div>
-      </div></article>
-
       <article class="card tilt reveal"><div class="card-body">
         <div class="meta"><span class="tag">Time series · ML course</span><span>2025</span></div>
         <h3>Stock Price Prediction with RNNs</h3>
@@ -665,6 +759,7 @@ footer{border-top:1px solid var(--line); padding-block:22px 34px; font:400 12px/
         <h3>Wearable Parkinson's symptom detector</h3>
         <p>Accelerometer data sampled on an STM32 board, a fixed-point DFT computed on-device, and band energy flagging tremor, dyskinesia and freezing of gait, streamed over custom BLE.</p>
         <div class="spec">C++ · Mbed OS · LSM6DSL @ 52 Hz · 3–5 / 5–7 Hz bands · BLE GATT</div>
+        <div class="links"><a href="https://github.com/karunaav/Parkinsons-demo" target="_blank" rel="noopener">Code <span class="arrow">↗</span></a></div>
       </article>
       <article class="reveal">
         <svg class="wave" viewBox="0 0 300 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0 28 H30 V8 H60 V28 H90 V8 H150 V28 H180 V8 H210 V28 H270 V8 H300"/></svg>
@@ -839,7 +934,7 @@ footer{border-top:1px solid var(--line); padding-block:22px 34px; font:400 12px/
   let W=0,H=0,dpr=1, colors={}, frame=0, userF=null, lastUser=0;
   const f1El=document.getElementById('f1'), bandEl=document.getElementById('band');
 
-  function readColors(){ const cs=getComputedStyle(document.documentElement); ['--amber','--cyan','--muted','--faint','--line','--grid','--surface','--text'].forEach(k=>colors[k]=cs.getPropertyValue(k).trim()); }
+  function readColors(){ const cs=getComputedStyle(document.documentElement); ['--amber','--cyan','--muted','--faint','--line','--grid','--surface','--text','--c1','--c2','--c3','--c4','--c5','--c6'].forEach(k=>colors[k]=cs.getPropertyValue(k).trim()); }
   function size(){ const r=cv.getBoundingClientRect(); dpr=Math.min(2,devicePixelRatio||1); W=r.width; H=r.height; cv.width=Math.round(W*dpr); cv.height=Math.round(H*dpr); ctx.setTransform(dpr,0,0,dpr,0,0); }
   new ResizeObserver(()=>{ size(); if(reduce) draw(performance.now()); }).observe(cv);
   readColors(); matchMedia('(prefers-color-scheme: dark)').addEventListener('change',readColors);
@@ -870,18 +965,18 @@ footer{border-top:1px solid var(--line); padding-block:22px 34px; font:400 12px/
     ctx.globalAlpha=1;
     // trace
     const mid=(top+split-6)/2, amp=(split-6-top)/2/2.1;
-    ctx.strokeStyle=colors['--amber']; ctx.lineWidth=2; ctx.shadowColor=colors['--amber']; ctx.shadowBlur=reduce?0:10;
+    const tg=ctx.createLinearGradient(padL,0,W-padR,0); ['--c1','--c2','--c3','--c4','--c5','--c6'].forEach((k,i)=>tg.addColorStop(i/5,colors[k])); ctx.strokeStyle=tg; ctx.lineWidth=2; ctx.shadowColor=colors['--c5']; ctx.shadowBlur=reduce?0:5;
     ctx.beginPath(); for(let n=0;n<N;n++){ const px=padL+pw*n/(N-1), py=mid-x[n]*amp; n?ctx.lineTo(px,py):ctx.moveTo(px,py);} ctx.stroke(); ctx.shadowBlur=0;
 
     // spectrum: bands
     const fx=f=>padL+pw*(f/(FS/2));
     ctx.fillStyle=colors['--cyan']; ctx.globalAlpha=.12; ctx.fillRect(fx(3),specTop,fx(5)-fx(3),axisY-specTop); ctx.globalAlpha=.07; ctx.fillRect(fx(5),specTop,fx(7)-fx(5),axisY-specTop); ctx.globalAlpha=1;
-    ctx.font='500 10px "JetBrains Mono", monospace'; ctx.fillStyle=colors['--cyan']; ctx.textAlign='left';
+    ctx.font='400 10px "Space Mono", monospace'; ctx.fillStyle=colors['--cyan']; ctx.textAlign='left';
     if(W>420){ ctx.fillText('tremor',fx(3)+3,specTop+11); ctx.fillText('dysk.',fx(5)+3,specTop+11); }
     // bars
     const bw=pw/(HALF+1); const sh=axisY-specTop-4;
     for(let k=0;k<=HALF;k++){ const v=Math.min(1.1,smooth[k]); const h=Math.max(1,v/1.1*sh); const f=k*FS/N; const inBand=f>=3&&f<=7;
-      ctx.fillStyle= v>0.35 ? colors['--amber'] : (inBand? colors['--cyan'] : colors['--muted']); ctx.globalAlpha= v>0.35?1:.55;
+      ctx.fillStyle= v>0.35 ? `hsl(${330-(k/HALF)*290},60%,74%)` : (inBand? colors['--cyan'] : colors['--muted']); ctx.globalAlpha= v>0.35?1:.55;
       ctx.fillRect(padL+k*bw, axisY-h, Math.max(1,bw-1), h); }
     ctx.globalAlpha=1;
     // axis
