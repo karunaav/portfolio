@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Karuna Venkatesh: Applied AI & Machine Learning Engineer. MS Computer Engineering (ML), NYU Tandon. Agentic AI, LLM fine-tuning, MLOps.">
-<meta property="og:title" content="Karuna Venkatesh | Applied AI & ML Engineer">
-<meta property="og:description" content="Agentic AI systems, fine-tuned vision-language models, MLOps and ML research. NYU Tandon, May 2027.">
+<meta name="description" content="Karuna Venkatesh: Data Science & Machine Learning. MS Computer Engineering (ML), NYU Tandon. Predictive modeling, big-data analytics, fine-tuned models and MLOps.">
+<meta property="og:title" content="Karuna Venkatesh | Data Science & Machine Learning">
+<meta property="og:description" content="Big-data analytics, predictive models, fine-tuned vision-language models, MLOps and ML research. NYU Tandon, May 2027.">
 <meta property="og:type" content="website">
 <style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
 <title>Karuna Venkatesh</title>
@@ -148,14 +148,6 @@ nav.top .wrap{display:flex; align-items:center; justify-content:space-between; g
 .marquee span::after{content:""; width:5px; height:5px; border-radius:50%; background:var(--amber)}
 @keyframes scroll{to{transform:translateX(-50%)}}
 
-/* proof strip */
-.proof{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:16px; overflow:hidden; margin-top:56px}
-@media (max-width:860px){ .proof{grid-template-columns:repeat(2,minmax(0,1fr))} }
-.proof div{background:var(--bg); padding:22px 20px}
-.proof .num{font:800 clamp(1.9rem,3.6vw,2.7rem)/1 var(--display); font-variation-settings:"wdth" 118; color:var(--text); font-variant-numeric:tabular-nums}
-.proof .num small{font-size:.5em; color:var(--amber); margin-left:2px}
-.proof p{margin:10px 0 0; color:var(--muted); font-size:14px; line-height:1.45}
-
 /* sections */
 section.block{padding-block:96px 0}
 .sec-head{display:flex; justify-content:space-between; align-items:end; gap:20px; flex-wrap:wrap; margin-bottom:36px}
@@ -166,6 +158,9 @@ section.block{padding-block:96px 0}
 .sec-head h2 .trace{display:block; height:3px; width:120px; margin-top:16px; background:linear-gradient(90deg,var(--amber),var(--cyan)); border-radius:2px; transform-origin:0 50%}
 .sec-head p{color:var(--muted); max-width:44ch; margin:0}
 .kicker{font:500 12px/1 var(--mono); letter-spacing:.14em; text-transform:uppercase; color:var(--amber)}
+.subhead{display:flex; align-items:center; gap:14px; margin:64px 0 20px; font:500 12px/1 var(--mono); letter-spacing:.14em; text-transform:uppercase; color:var(--muted)}
+.subhead::after{content:""; flex:1; height:1px; background:var(--line)}
+.subhead b{color:var(--cyan); font-weight:500}
 
 /* cards */
 .card{
@@ -221,7 +216,7 @@ section.block{padding-block:96px 0}
 @media (max-width:980px){ .grid-more{grid-template-columns:repeat(2,minmax(0,1fr))} }
 @media (max-width:640px){ .grid-more{grid-template-columns:1fr} }
 .grid-more .card-body{min-height:260px}
-@media (max-width:980px) and (min-width:641px){ .grid-more .card:last-child{grid-column:1/-1} }
+@media (max-width:980px) and (min-width:641px){ .grid-more .card:last-child:nth-child(odd){grid-column:1/-1} }
 .pill{font:600 12px/1 var(--mono); letter-spacing:.04em; padding:9px 13px; border-radius:999px; border:1px dashed var(--line2); color:var(--muted)}
 .pill.win{border:1px solid var(--amber); color:var(--amber); background:var(--amber-soft); position:relative; overflow:hidden}
 .pill.win::after{content:""; position:absolute; inset:0; background:linear-gradient(100deg,transparent 30%,rgba(255,255,255,.35) 50%,transparent 70%); transform:translateX(-120%); animation:shine 3.2s ease-in-out infinite}
@@ -379,7 +374,7 @@ footer{border-top:1px solid var(--line); padding-block:22px 34px; font:400 12px/
 </nav>
 
 <header class="hero wrap" id="top">
-  <div class="eyebrow"><span><b>●</b> Applied AI &amp; Machine Learning Engineer</span><span>MS Computer Engineering (ML), NYU Tandon · May 2027</span><span>Brooklyn, NY</span></div>
+  <div class="eyebrow"><span><b>●</b> Data Science &amp; Machine Learning</span><span>MS Computer Engineering (ML), NYU Tandon · May 2027</span><span>Brooklyn, NY</span></div>
   <h1 class="name" aria-label="Karuna Venkatesh">
     <span class="line one" data-word="Karuna"></span>
     <span class="line two" data-word="Venkatesh"></span>
@@ -387,8 +382,8 @@ footer{border-top:1px solid var(--line); padding-block:22px 34px; font:400 12px/
 
   <div class="hero-grid">
     <div>
-      <p class="lede">I build <em>agentic AI systems</em> that reason, call tools and check their own work. I got here through signals and silicon.</p>
-      <p class="sub">Agents with LangGraph and ReAct loops, fine-tuned vision-language models, MLOps on Kubernetes, and research on RNN models of human decision-making at the Mattar Lab.</p>
+      <p class="lede">I love turning <em>messy data into models</em> that predict, explain themselves and hold up in production. I got here through signals and silicon.</p>
+      <p class="sub">Large-scale analytics with PySpark, predictive models with scikit-learn and PyTorch, fine-tuned vision-language models, MLOps on Kubernetes, and research on RNN models of human decision-making at the Mattar Lab.</p>
       <div class="ctas">
         <a class="btn primary mag" href="#projects">See the work <span class="arrow">↓</span></a>
         <a class="btn mag" href="https://github.com/karunaav" target="_blank" rel="noopener">
@@ -410,7 +405,7 @@ footer{border-top:1px solid var(--line); padding-block:22px 34px; font:400 12px/
 
 <div class="marquee" aria-label="Tools I work with">
   <div class="track" id="track">
-    <span>PyTorch</span><span>Hugging Face</span><span>LoRA · QLoRA</span><span>LangGraph</span><span>ReAct agents</span><span>MCP servers</span><span>scikit-learn</span><span>Spark MLlib</span><span>SHAP</span><span>GNNs</span><span>FastAPI</span><span>React · Vite</span><span>Kubernetes</span><span>MLflow</span><span>ONNX · Triton</span><span>Prometheus · Grafana</span><span>PySpark</span><span>Chroma</span><span>React Native</span><span>Verilog</span><span>STM32 · Mbed OS</span>
+    <span>PyTorch</span><span>scikit-learn</span><span>PySpark</span><span>Spark MLlib</span><span>SHAP</span><span>Time-series forecasting</span><span>Hugging Face</span><span>LoRA · QLoRA</span><span>GNNs</span><span>Parquet</span><span>SQL</span><span>MLflow</span><span>Kubernetes</span><span>ONNX · Triton</span><span>Prometheus · Grafana</span><span>Leaflet · Chart.js</span><span>QGIS · GeoPandas</span><span>LangGraph</span><span>FastAPI</span><span>Verilog</span><span>STM32 · Mbed OS</span>
   </div>
 </div>
 
@@ -418,64 +413,70 @@ footer{border-top:1px solid var(--line); padding-block:22px 34px; font:400 12px/
 
   <section class="block" id="projects">
     <div class="sec-head">
-      <div><div class="kicker">Selected projects</div><h2>Agents, models<br>and the systems around them<span class="trace"></span></h2></div>
-      <p>The three I'd show first, then nine more. Every card links to the code, and to a live demo when one is running.</p>
+      <div><div class="kicker">Selected projects</div><h2>Data, models<br>and the systems around them<span class="trace"></span></h2></div>
+      <p>Machine learning and data science first, then the LLM apps I've built. Every card links to the code, and to a live demo when one is running.</p>
     </div>
 
+    <div class="subhead"><b>01</b> Machine learning &amp; data science</div>
+
     <div class="featured">
-      <!-- JobAgent -->
+      <!-- NYC Rodent Analytics -->
       <article class="card tilt reveal">
         <div class="diagram">
-          <svg viewBox="0 0 320 160" role="img" aria-label="ReAct loop: thought, tool call, observation">
-            <path id="jaLoop" class="d-path" d="M70 104 C 70 40, 160 22, 160 22 C 160 22, 250 40, 250 104 C 250 140, 70 140, 70 104 Z"/>
-            <path class="d-flow" d="M70 104 C 70 40, 160 22, 160 22 C 160 22, 250 40, 250 104 C 250 140, 70 140, 70 104 Z"/>
-            <circle r="5" class="d-dot"><animateMotion dur="3.6s" repeatCount="indefinite"><mpath href="#jaLoop"/></animateMotion></circle>
-            <rect x="26" y="90" width="88" height="28" rx="14" class="d-node"/><text x="70" y="108" text-anchor="middle" class="d-text">thought</text>
-            <rect x="106" y="8" width="108" height="28" rx="14" class="d-hot"/><text x="160" y="26" text-anchor="middle" class="d-amb" id="toolName">search_jobs()</text>
-            <rect x="200" y="90" width="100" height="28" rx="14" class="d-node"/><text x="250" y="108" text-anchor="middle" class="d-text">observation</text>
-            <text x="160" y="88" text-anchor="middle" class="d-dim">Groq · llama-3.3-70b</text>
-            <text x="160" y="152" text-anchor="middle" class="d-dim">ReAct loop · SSE stream</text>
+          <svg viewBox="0 0 320 160" role="img" aria-label="ZIP by month feature grid feeding a Random Forest, scoring 0.87 AUC on held-out years">
+            <g id="zipgrid"></g>
+            <text x="75" y="140" text-anchor="middle" class="d-dim">ZIP × month · 2.72M rows</text>
+            <path class="d-flow c" d="M138 76 H182"/>
+            <text x="160" y="66" text-anchor="middle" class="d-dim">ETL</text>
+            <rect x="186" y="50" width="118" height="50" rx="10" class="d-hot"/>
+            <text x="245" y="72" text-anchor="middle" class="d-amb">Random Forest</text>
+            <text x="245" y="88" text-anchor="middle" class="d-dim">train 2009–22</text>
+            <text x="245" y="126" text-anchor="middle" class="d-text">AUC 0.87</text>
+            <text x="245" y="140" text-anchor="middle" class="d-dim">test 2023–25</text>
           </svg>
         </div>
         <div class="card-body">
-          <div class="meta"><span class="tag">Agentic AI</span><span>2026</span></div>
-          <h3>JobAgent</h3>
-          <p>Paste your profile and an agent works the job market for you. It picks its own tools to search real postings, score your fit with TF-IDF cosine similarity, check skill demand and adjust salaries with BLS data.</p>
-          <div class="stack">FastAPI · SSE · Groq · HuggingFace datasets · scikit-learn</div>
+          <div class="meta"><span class="tag">Big data · ML · Team project</span><span>2026</span></div>
+          <h3>NYC Rodent Inspection Analytics</h3>
+          <p>16 years of NYC rodent inspections (2.72M records) run through a PySpark ETL into ZIP × month features with lag, rolling and seasonal windows. A Random Forest trained on 2009–2022 and tested on 2023–2025 reaches 0.87 AUC, shown in an interactive Leaflet dashboard.</p>
+          <div class="stack">PySpark · MLlib (RF, GBT) · Parquet · Leaflet · Chart.js</div>
           <div class="links">
-            <a class="live" href="https://karuna2222-jobagent.hf.space" target="_blank" rel="noopener">Live demo <span class="arrow">↗</span></a>
-            <a href="https://github.com/karunaav/jobagent" target="_blank" rel="noopener">Code <span class="arrow">↗</span></a>
+            <a href="https://github.com/akashchauhanweb/nycOpenDataAnalysisOnRodentInfestation" target="_blank" rel="noopener">Code (team repo) <span class="arrow">↗</span></a>
           </div>
         </div>
       </article>
 
-      <!-- RAG -->
+      <!-- Stock forecasting -->
       <article class="card tilt reveal">
         <div class="diagram">
-          <svg viewBox="0 0 320 160" role="img" aria-label="LangGraph agent with reason, tools and reflect nodes and three memory stores">
-            <path d="M20 40 h26 l10 10 v48 h-36 z" class="d-node"/><path d="M26 62 h24 M26 70 h24 M26 78 h18" stroke="currentColor" style="stroke:var(--faint)" />
-            <text x="38" y="118" text-anchor="middle" class="d-dim">PDF</text>
-            <path class="d-flow c" d="M58 74 H100"/>
-            <rect x="100" y="60" width="72" height="28" rx="14" class="d-hot"/><text x="136" y="78" text-anchor="middle" class="d-amb">reason</text>
-            <rect x="196" y="18" width="72" height="28" rx="14" class="d-node"/><text x="232" y="36" text-anchor="middle" class="d-text">tools</text>
-            <rect x="196" y="102" width="72" height="28" rx="14" class="d-node"/><text x="232" y="120" text-anchor="middle" class="d-text">reflect</text>
-            <path class="d-flow" d="M172 68 C 186 50, 190 40, 196 34"/>
-            <path class="d-flow" d="M232 46 V102"/>
-            <path class="d-flow" d="M196 118 C 180 110, 176 96, 166 88"/>
-            <g class="d-pulse"><rect x="282" y="34" width="30" height="16" rx="4" class="d-cool"/></g>
-            <g class="d-pulse" style="animation-delay:.6s"><rect x="282" y="58" width="30" height="16" rx="4" class="d-cool"/></g>
-            <g class="d-pulse" style="animation-delay:1.2s"><rect x="282" y="82" width="30" height="16" rx="4" class="d-cool"/></g>
-            <text x="297" y="116" text-anchor="middle" class="d-dim">memory</text>
-            <text x="136" y="148" text-anchor="middle" class="d-dim">hybrid search · Chroma</text>
+          <svg viewBox="0 0 320 160" role="img" aria-label="Price history and FinBERT news sentiment feed a transformer that predicts next-day returns">
+            <path class="d-path" d="M20 22 V104 H150"/>
+            <path class="d-flow" d="M24 84 L40 76 L56 80 L72 62 L88 67 L104 50 L120 56 L136 38 L148 42"/>
+            <rect x="26" y="106" width="9" height="12" rx="1.5" class="d-cool d-pulse"/>
+            <rect x="41" y="112" width="9" height="6" rx="1.5" class="d-cool d-pulse" style="animation-delay:.3s"/>
+            <rect x="56" y="118" width="9" height="8" rx="1.5" class="d-hot d-pulse" style="animation-delay:.6s"/>
+            <rect x="71" y="104" width="9" height="14" rx="1.5" class="d-cool d-pulse" style="animation-delay:.9s"/>
+            <rect x="86" y="118" width="9" height="5" rx="1.5" class="d-hot d-pulse" style="animation-delay:1.2s"/>
+            <rect x="101" y="108" width="9" height="10" rx="1.5" class="d-cool d-pulse" style="animation-delay:1.5s"/>
+            <rect x="116" y="102" width="9" height="16" rx="1.5" class="d-cool d-pulse" style="animation-delay:1.8s"/>
+            <rect x="131" y="118" width="9" height="6" rx="1.5" class="d-hot d-pulse" style="animation-delay:2.1s"/>
+            <text x="85" y="146" text-anchor="middle" class="d-dim">price + FinBERT sentiment</text>
+            <path class="d-flow" d="M156 70 H188"/>
+            <rect x="192" y="50" width="112" height="42" rx="10" class="d-hot"/>
+            <text x="248" y="68" text-anchor="middle" class="d-amb">transformer</text>
+            <text x="248" y="83" text-anchor="middle" class="d-dim">next-day return</text>
+            <text x="248" y="120" text-anchor="middle" class="d-text">SHAP · backtest</text>
+            <text x="248" y="136" text-anchor="middle" class="d-dim">CAGR · Sharpe · MDD</text>
           </svg>
         </div>
         <div class="card-body">
-          <div class="meta"><span class="tag">Agentic RAG</span><span>2026</span></div>
-          <h3>Agentic RAG Chatbot</h3>
-          <p>Upload a PDF and a LangGraph agent decides when to search it, critiques its own answer before replying, and remembers the conversation through short-term, episodic and semantic memory. Also runs as an MCP server inside Claude Desktop.</p>
-          <div class="stack">LangGraph · Gemini · Chroma · FastAPI · React · MCP · eval harness</div>
+          <div class="meta"><span class="tag">ML · Finance</span><span>2025</span></div>
+          <h3>Sentiment-Aware Stock Forecasting</h3>
+          <p>A transformer predicts next-day returns from price history and FinBERT news sentiment. SHAP explains each call, and a backtest reports CAGR, Sharpe and max drawdown.</p>
+          <div class="stack">FinBERT · Transformer · FastAPI · Dash/Plotly · SHAP · Docker</div>
           <div class="links">
-            <a href="https://github.com/karunaav/RAGchatbot" target="_blank" rel="noopener">Code <span class="arrow">↗</span></a>
+            <a class="live" href="https://sentiment-forecast-v3.onrender.com/dashboard/" target="_blank" rel="noopener">Live demo <span class="arrow">↗</span></a>
+            <a href="https://github.com/karunaav/FinBERT-sentiment-analysis" target="_blank" rel="noopener">Code <span class="arrow">↗</span></a>
           </div>
         </div>
       </article>
@@ -508,11 +509,11 @@ footer{border-top:1px solid var(--line); padding-block:22px 34px; font:400 12px/
 
     <div class="grid-more">
       <article class="card tilt reveal"><div class="card-body">
-        <div class="meta"><span class="tag">Big data · ML · Team project</span><span>2026</span></div>
-        <h3>NYC Rodent Inspection Analytics</h3>
-        <p>16 years of NYC rodent inspections (2.72M records) run through a PySpark ETL into ZIP × month features with lag, rolling and seasonal windows. A Random Forest trained on 2009–2022 and tested on 2023–2025 reaches 0.87 AUC, shown in an interactive Leaflet dashboard.</p>
-        <div class="stack">PySpark · MLlib (RF, GBT) · Parquet · Leaflet · Chart.js</div>
-        <div class="links"><span class="pill">Big Data course project</span></div>
+        <div class="meta"><span class="tag">Vision-language · Kaggle</span><span>2026</span></div>
+        <h3>Pixels to Predictions (VQA)</h3>
+        <p>Fine-tuned SmolVLM-500M with rank-16 LoRA on the attention projections, under a 5M-parameter cap. Letter-shuffle augmentation fought positional bias; test-time augmentation lifted the score to 0.831.</p>
+        <div class="stack">SmolVLM · LoRA · PEFT · TTA · Colab under 1 hour</div>
+        <div class="links"><a href="https://github.com/karunaav/DL" target="_blank" rel="noopener">Notebooks <span class="arrow">↗</span></a></div>
       </div></article>
 
       <article class="card tilt reveal"><div class="card-body">
@@ -524,38 +525,42 @@ footer{border-top:1px solid var(--line); padding-block:22px 34px; font:400 12px/
       </div></article>
 
       <article class="card tilt reveal"><div class="card-body">
-        <div class="meta"><span class="tag">Vision-language · Kaggle</span><span>2026</span></div>
-        <h3>Pixels to Predictions (VQA)</h3>
-        <p>Fine-tuned SmolVLM-500M with rank-16 LoRA on the attention projections, under a 5M-parameter cap. Letter-shuffle augmentation fought positional bias; test-time augmentation lifted the score to 0.831.</p>
-        <div class="stack">SmolVLM · LoRA · PEFT · TTA · Colab under 1 hour</div>
-        <div class="links"><a href="https://github.com/karunaav/DL" target="_blank" rel="noopener">Notebooks <span class="arrow">↗</span></a></div>
-      </div></article>
-
-      <article class="card tilt reveal"><div class="card-body">
         <div class="meta"><span class="tag">Generative · Kaggle</span><span>2026</span></div>
         <h3>Text-to-SVG Generation</h3>
         <p>Fine-tuned Qwen2.5 with 4-bit QLoRA to turn text descriptions into vector graphics, with a validity pipeline (filtering, dimension fixes, fallback SVG) so every submission met the 256×256 canvas and 16K-character limits.</p>
         <div class="stack">Qwen2.5 · QLoRA · Unsloth · 4-bit quantization</div>
         <div class="links"><span class="pill">Kaggle competition</span></div>
       </div></article>
+    </div>
 
-      <article class="card tilt reveal"><div class="card-body">
-        <div class="meta"><span class="tag">ML · Finance</span><span>2025</span></div>
-        <h3>Sentiment-Aware Stock Forecasting</h3>
-        <p>A transformer predicts next-day returns from price history and FinBERT news sentiment. SHAP explains each call, and a backtest reports CAGR, Sharpe and max drawdown.</p>
-        <div class="stack">FinBERT · Transformer · FastAPI · Dash/Plotly · SHAP · Docker</div>
-        <div class="links">
-          <a class="live" href="https://sentiment-forecast-v3.onrender.com/dashboard/" target="_blank" rel="noopener">Live <span class="arrow">↗</span></a>
-          <a href="https://github.com/karunaav/FinBERT-sentiment-analysis" target="_blank" rel="noopener">Code <span class="arrow">↗</span></a>
-        </div>
-      </div></article>
+    <div class="subhead"><b>02</b> LLM apps &amp; agents</div>
 
+    <div class="grid-more">
       <article class="card tilt reveal"><div class="card-body">
         <div class="meta"><span class="tag">ML pipelines · Observability</span><span>2026</span></div>
         <h3>Water Tracker AI</h3>
         <p>A hydration coach backed by three models: an intake forecast (~280 ml MAE), a goal-met classifier (0.79 AUC) and a reminder-urgency model that holds back needless notifications.</p>
         <div class="stack">FastAPI · LangChain · scikit-learn · APScheduler · Prometheus · Grafana</div>
         <div class="links"><a href="https://github.com/karunaav/water-tracker-ai" target="_blank" rel="noopener">Code <span class="arrow">↗</span></a></div>
+      </div></article>
+
+      <article class="card tilt reveal"><div class="card-body">
+        <div class="meta"><span class="tag">Agentic AI</span><span>2026</span></div>
+        <h3>JobAgent</h3>
+        <p>Paste your profile and an agent works the job market for you. It picks its own tools to search real postings, score your fit with TF-IDF cosine similarity, check skill demand and adjust salaries with BLS data.</p>
+        <div class="stack">FastAPI · SSE · Groq · HuggingFace datasets · scikit-learn</div>
+        <div class="links">
+          <a class="live" href="https://karuna2222-jobagent.hf.space" target="_blank" rel="noopener">Live demo <span class="arrow">↗</span></a>
+          <a href="https://github.com/karunaav/jobagent" target="_blank" rel="noopener">Code <span class="arrow">↗</span></a>
+        </div>
+      </div></article>
+
+      <article class="card tilt reveal"><div class="card-body">
+        <div class="meta"><span class="tag">Agentic RAG</span><span>2026</span></div>
+        <h3>Agentic RAG Chatbot</h3>
+        <p>Upload a PDF and a LangGraph agent decides when to search it, critiques its own answer before replying, and remembers the conversation through short-term, episodic and semantic memory. Also runs as an MCP server inside Claude Desktop.</p>
+        <div class="stack">LangGraph · Gemini · Chroma · FastAPI · React · MCP · eval harness</div>
+        <div class="links"><a href="https://github.com/karunaav/RAGchatbot" target="_blank" rel="noopener">Code <span class="arrow">↗</span></a></div>
       </div></article>
 
       <article class="card tilt reveal"><div class="card-body">
@@ -615,13 +620,13 @@ footer{border-top:1px solid var(--line); padding-block:22px 34px; font:400 12px/
   <section class="block" id="skills">
     <div class="sec-head">
       <div><div class="kicker">Toolkit &amp; training</div><h2>Skills<span class="trace"></span></h2></div>
-      <p>What I reach for when building ML systems end to end, from data to model to a service people can use.</p>
+      <p>What I reach for when working with data end to end, from raw records to a model to a service people can use.</p>
     </div>
     <div class="skills">
-      <div class="skill-group reveal"><h3>Machine learning &amp; deep learning</h3><div class="chips"><span>PyTorch</span><span>Hugging Face</span><span>LoRA / QLoRA</span><span>PEFT</span><span>Vision-language models</span><span>Transformers</span><span>RNNs / GRUs</span><span>GNNs</span><span>scikit-learn</span><span>SHAP</span><span>Time-series forecasting</span></div></div>
-      <div class="skill-group reveal"><h3>LLMs &amp; agents</h3><div class="chips"><span>LangGraph</span><span>LangChain</span><span>ReAct tool calling</span><span>RAG &amp; hybrid search</span><span>Chroma</span><span>MCP servers</span><span>Agent evaluation</span><span>Claude · Gemini · Groq APIs</span><span>n8n</span></div></div>
-      <div class="skill-group reveal"><h3>MLOps &amp; data</h3><div class="chips"><span>Kubernetes</span><span>Docker</span><span>MLflow</span><span>ONNX</span><span>Triton</span><span>Prometheus</span><span>Grafana</span><span>PySpark &amp; MLlib</span><span>Parquet</span><span>SQL</span></div></div>
-      <div class="skill-group reveal"><h3>Apps &amp; geospatial</h3><div class="chips"><span>FastAPI</span><span>React</span><span>React Native</span><span>Node.js</span><span>Streamlit</span><span>Dash</span><span>QGIS</span><span>GeoPandas</span><span>Leaflet</span><span>Figma</span></div></div>
+      <div class="skill-group reveal"><h3>Machine learning &amp; deep learning</h3><div class="chips"><span>PyTorch</span><span>scikit-learn</span><span>Time-series forecasting</span><span>SHAP</span><span>Hugging Face</span><span>LoRA / QLoRA</span><span>PEFT</span><span>Vision-language models</span><span>Transformers</span><span>RNNs / GRUs</span><span>GNNs</span></div></div>
+      <div class="skill-group reveal"><h3>Data &amp; MLOps</h3><div class="chips"><span>PySpark &amp; MLlib</span><span>SQL</span><span>Parquet</span><span>Kubernetes</span><span>Docker</span><span>MLflow</span><span>ONNX</span><span>Triton</span><span>Prometheus</span><span>Grafana</span></div></div>
+      <div class="skill-group reveal"><h3>Visualization &amp; geospatial</h3><div class="chips"><span>Leaflet</span><span>Chart.js</span><span>Dash</span><span>Streamlit</span><span>QGIS</span><span>GeoPandas</span><span>Figma</span></div></div>
+      <div class="skill-group reveal"><h3>LLMs, agents &amp; apps</h3><div class="chips"><span>LangGraph</span><span>LangChain</span><span>RAG &amp; hybrid search</span><span>Chroma</span><span>MCP servers</span><span>Claude · Gemini · Groq APIs</span><span>n8n</span><span>FastAPI</span><span>React</span><span>React Native</span><span>Node.js</span></div></div>
     </div>
     <div class="edu">
       <div class="reveal"><div class="when">2025 – May 2027</div><h3>MS Computer Engineering, Machine Learning</h3><p>NYU Tandon School of Engineering · GPA 3.61</p><div class="spec">ML Systems Engineering · Big Data (A) · Real-Time Embedded Systems (A) · Computing Systems Architecture (A) · Machine Listening</div></div>
@@ -711,7 +716,7 @@ footer{border-top:1px solid var(--line); padding-block:22px 34px; font:400 12px/
   </section>
 
   <section class="contact" id="contact">
-    <div class="kicker">Open to ML engineering &amp; AI roles</div>
+    <div class="kicker">Open to data science &amp; ML roles</div>
     <h2 aria-label="Let's build something."><span>Let's</span> <span>build</span> <span class="acc">something.</span></h2>
     <div class="contact-row">
       <span class="email" id="email">vkaruna2002@gmail.com</span>
@@ -731,6 +736,7 @@ footer{border-top:1px solid var(--line); padding-block:22px 34px; font:400 12px/
 (function(){
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const fine = matchMedia('(hover: hover) and (pointer: fine)').matches;
+  const NS='http://www.w3.org/2000/svg';
 
   // Split hero name into letters
   let idx = 0;
@@ -769,31 +775,29 @@ footer{border-top:1px solid var(--line); padding-block:22px 34px; font:400 12px/
     });
   }
 
-  // Count-up (final values are already in the markup)
-  const io=new IntersectionObserver(entries=>{
-    entries.forEach(en=>{
-      if(!en.isIntersecting) return; io.unobserve(en.target);
-      if(reduce) return;
-      const el=en.target, to=parseFloat(el.dataset.count), dec=+(el.dataset.dec||0), suf=el.dataset.suffix||'';
-      const t0=performance.now(), dur=1400;
-      (function step(t){ const k=Math.min(1,(t-t0)/dur), e=1-Math.pow(1-k,3); const v=(to*e).toFixed(dec);
-        el.innerHTML = (dec? v : Math.round(to*e)) + (suf? `<small>${suf}</small>`:''); if(k<1) requestAnimationFrame(step); })(t0);
-    });
-  },{threshold:.6});
-  document.querySelectorAll('[data-count]').forEach(n=>io.observe(n));
-
-  // JobAgent tool cycling
-  const tools=['search_jobs()','score_match()','skill_demand()','salary_lookup()','filter_by_location()','summarize_findings()'];
-  const tn=document.getElementById('toolName'); let ti=0;
-  if(!reduce) setInterval(()=>{ ti=(ti+1)%tools.length; tn.textContent=tools[ti]; },1800);
+  // NYC ZIP × month heat grid (rodent project diagram)
+  const zg=document.getElementById('zipgrid');
+  if(zg){
+    const heat=[.2,.5,.9,.4,.3,.6, .7,.3,.5,1,.6,.2, .4,.8,.3,.5,.9,.4, .3,.5,.7,.2,.6,.8];
+    for(let r=0;r<4;r++) for(let c=0;c<6;c++){
+      const v=heat[r*6+c], rect=document.createElementNS(NS,'rect');
+      rect.setAttribute('x',18+c*19); rect.setAttribute('y',34+r*19); rect.setAttribute('width',16); rect.setAttribute('height',16); rect.setAttribute('rx',3);
+      rect.setAttribute('class', v>=.8 ? 'd-hot d-pulse' : 'd-cool');
+      if(v<.8) rect.style.opacity=(.35+v*.65).toFixed(2);
+      rect.style.animationDelay=((r*6+c)*0.13)+'s';
+      zg.appendChild(rect);
+    }
+  }
 
   // Craft GRU squares (8 sizes, 5 seed dots each)
-  const g=document.getElementById('craft'); const NS='http://www.w3.org/2000/svg';
-  for(let i=0;i<8;i++){
-    const s=10+i*2.6, x=14+i*20.5, y=74-s/2;
-    const r=document.createElementNS(NS,'rect'); r.setAttribute('x',x); r.setAttribute('y',y); r.setAttribute('width',s*0.62+6); r.setAttribute('height',s); r.setAttribute('rx',3);
-    r.setAttribute('class','d-hot d-pulse'); r.style.animationDelay=(i*0.18)+'s'; g.appendChild(r);
-    for(let j=0;j<5;j++){ const c=document.createElementNS(NS,'circle'); c.setAttribute('cx',x+(s*0.62+6)/2); c.setAttribute('cy',y+s+8+j*5.5); c.setAttribute('r',1.6); c.setAttribute('class','d-dot'); c.style.opacity=.35+j*.13; g.appendChild(c); }
+  const g=document.getElementById('craft');
+  if(g){
+    for(let i=0;i<8;i++){
+      const s=10+i*2.6, x=14+i*20.5, y=74-s/2;
+      const r=document.createElementNS(NS,'rect'); r.setAttribute('x',x); r.setAttribute('y',y); r.setAttribute('width',s*0.62+6); r.setAttribute('height',s); r.setAttribute('rx',3);
+      r.setAttribute('class','d-hot d-pulse'); r.style.animationDelay=(i*0.18)+'s'; g.appendChild(r);
+      for(let j=0;j<5;j++){ const c=document.createElementNS(NS,'circle'); c.setAttribute('cx',x+(s*0.62+6)/2); c.setAttribute('cy',y+s+8+j*5.5); c.setAttribute('r',1.6); c.setAttribute('class','d-dot'); c.style.opacity=.35+j*.13; g.appendChild(c); }
+    }
   }
   if(reduce) document.querySelectorAll('svg').forEach(s=>s.pauseAnimations&&s.pauseAnimations());
 
